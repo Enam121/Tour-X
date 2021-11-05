@@ -1,0 +1,75 @@
+.banner{
+  height: 550px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(https://www.tourx-react.egenslab.com/static/media/p-4.5a3083bb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.margin{
+  margin: 150px auto;
+}
+
+.service-img{
+  height: 400px;
+  width: 350px;
+  background-image: url(https://i.ibb.co/hyp7yKz/franchrivira.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+
+} 
+/*
+.bg-img:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(https://i.ibb.co/hyp7yKz/franchrivira.png);
+}
+*/
+.title{
+position: absolute;
+bottom:  20px;
+left: 20px;
+right: 20px;
+
+}
+.service-container{
+ height: 400px;
+ width: 345;
+ margin: 100px 150px;
+}
+
+#d-none{
+  display: none;
+}
+#d-block{
+  display: block;
+}
+.text-justify{
+  text-align: justify;
+}
+
+/* subscribe */
+.subscribe{
+  height: 350px;
+  margin: 80px 200px;
+  border-radius: 30px;
+  background-color: rgb(71, 133, 71);
+}
+.subscribe h2{
+  padding: 40px 200px;
+  color: white;
+  /* font-size: 50px; */
+}
+.subscribe-field{
+ border-start-start-radius: 10px;
+  padding: 10px;
+  width: 400px;
+  margin: 5px auto ;
+  outline: none;
+  border: 0px;
+}
+.subs-btn{
+  background-color: #ff7f47;
+  padding: 10px 15px;
+  border-end-end-radius: 10px;
+  border: 0px;
+}

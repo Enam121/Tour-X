@@ -1,0 +1,53 @@
+.btn-regular{
+  padding: 5px 55px;
+  background-color: #ed7020;
+  border-radius: 5px;
+  border: 1px solid #e16312;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:50px auto ;
+   
+ }
+ .shadow{
+   background-color: #fff;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   text-align: center;
+   padding: 40px 10px;
+   box-shadow: 0px 0px 12px #bbb ;
+   width: 360px;
+ }
+ .shadow h2{
+   margin-top: 0;
+   /* text-align: start; */
+ }
+ .input-field{
+   width: 75%;
+   padding: 8px 0;
+   border-radius: 6px;
+   border: 1px solid #ccc;
+   outline-color: rgb(160, 155, 155);
+   padding-left: 10px;
+ }
+ .google-btn{
+   padding:0 30px;
+   background-color: white;
+   outline-color:red;
+   border: 1px solid rgb(160, 155, 155);
+   
+ }
+ .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 5px;
+  
+ }
+ 

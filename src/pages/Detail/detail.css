@@ -1,0 +1,12 @@
+.detail{
+  text-align: justify;
+}
+.detail-form{
+  margin-left: auto;
+}
+.detail-form input{
+display: inline-block;
+margin-top: 10px;
+width: 350px;
+padding: 5px;
+}

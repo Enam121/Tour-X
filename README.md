@@ -4,8 +4,10 @@
 
 
 #### -We listen to you.
- And We understand exactly what you want your trip to be.
- Then we make it happen.
+
+#### And We understand exactly what you want your trip to be.
+ 
+#### Then we make it happen.
 
 #### -We plan, you relax.
 

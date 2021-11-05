@@ -1,0 +1,15 @@
+/* utilities
+--------------*/
+
+.color{
+  color: #ff7f47;
+}
+
+/* ------------------ */
+.footer-container{
+  height: 580px;
+  width: 100%;
+  background-color: #262339;
+  color:white;
+  padding: 140px 80px;
+}
