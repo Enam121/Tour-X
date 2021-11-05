@@ -1,6 +1,6 @@
 
 ## TourX.com
- ## [live site](https:)
+ ## [live site](https:https://tourx99.netlify.app/)
 
 
 #### -We listen to you.
