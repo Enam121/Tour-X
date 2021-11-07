@@ -5,21 +5,12 @@ import logo from '../../../images/logo.png';
 
 const Nav = () => {
   const history = useHistory();
-  const { user, setUser, signingOut } = useAuth();
+  const { user, signingOut } = useAuth();
 
   const handleLoginButton = () => {
     history.push('/login');
   };
 
-
-  const handleLogOut = () => {
-    signingOut()
-      .then(result => {
-        setUser(null);
-        history.push('/')
-      })
-
-  };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top px-5 py-3">
@@ -43,6 +34,7 @@ const Nav = () => {
             </li>
             {
               user &&
+
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link className="nav-link" to="/my-cart">My Cart</Link>
@@ -63,7 +55,7 @@ const Nav = () => {
               <strong>{user.displayName}</strong>
               <button className="btn ms-3"
                 style={{ backgroundColor: '#ff7f47', }}
-                onClick={handleLogOut}>Log out</button>
+                onClick={signingOut}>Log out</button>
             </div>
 
               :

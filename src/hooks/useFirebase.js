@@ -5,6 +5,7 @@ import initializeAuthentication from "../Firebase/firebase-init";
 initializeAuthentication();
 
 const useFirebase = () => {
+
   const [user, setUser] = useState(null);
   const auth = getAuth();
 
@@ -36,10 +37,10 @@ const useFirebase = () => {
 
   //sign out
   const signingOut = () => {
-    return signOut(auth)
-    // .then(result => {
-    //   setUser(null);
-    // })
+    signOut(auth)
+      .then(() => {
+        setUser(null);
+      })
   }
 
   useEffect(() => {
@@ -53,7 +54,6 @@ const useFirebase = () => {
 
   return {
     user,
-    setUser,
     signUpUsingEmail,
     signInUsingEmail,
     signInUsingGoogle,
