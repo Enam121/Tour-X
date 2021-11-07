@@ -9,7 +9,7 @@ const MyCart = () => {
 
   useEffect(() => {
     if (user !== null) {
-      fetch(`http://localhost:7000/orders?email=${user?.email}`)
+      fetch(`https://intense-wave-50783.herokuapp.com/orders?email=${user?.email}`)
         .then(res => res.json())
         .then(data => {
           setOrders(data)
@@ -20,10 +20,11 @@ const MyCart = () => {
 
   }, []);
 
+
   const handleDeleteButton = (id) => {
     const permission = window.confirm('Are you sure? you want to cancel it');
     if (permission) {
-      fetch(`http://localhost:7000/orders/${id}`, { method: 'DELETE', })
+      fetch(`https://intense-wave-50783.herokuapp.com/orders/${id}`, { method: 'DELETE', })
         .then(res => res.json())
         .then(result => {
           console.log(result)
