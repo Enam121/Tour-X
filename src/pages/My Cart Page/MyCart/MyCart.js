@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import useAuth from '../../../hooks/useAuth';
 
+//hellow from new commit
 
 const MyCart = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useAuth();
-  console.log(user)
 
   useEffect(() => {
     if (user !== null) {
@@ -27,7 +27,6 @@ const MyCart = () => {
       fetch(`https://intense-wave-50783.herokuapp.com/orders/${id}`, { method: 'DELETE', })
         .then(res => res.json())
         .then(result => {
-          console.log(result)
           if (result.deletedCount > 0) {
             setOrders(orders.filter(order => order._id !== id))
           }
