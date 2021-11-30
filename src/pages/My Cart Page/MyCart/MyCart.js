@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useAuth from '../../../hooks/useAuth';
 
-//hellow from new commit
+
 
 const MyCart = () => {
   const [orders, setOrders] = useState([]);
@@ -11,12 +11,8 @@ const MyCart = () => {
     if (user !== null) {
       fetch(`https://intense-wave-50783.herokuapp.com/orders?email=${user?.email}`)
         .then(res => res.json())
-        .then(data => {
-          setOrders(data)
-          console.log(data)
-        })
+        .then(data => setOrders(data))
     }
-
 
   }, []);
 
